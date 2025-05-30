@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Modern font for elegance */
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* Pure white background */
+  color: #333; /* Dark text for readability */
+  overflow-x: hidden;
+  min-width: 100vh;
+}
+
+/* Full-Width Sections */
+section {
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 2rem; /* Add padding for better spacing */
+  box-sizing: border-box;
+}
+
+/* Typography */
+h1, h2 {
+  font-size: 3.5rem; /* Enlarged headings for a bold look */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: uppercase; /* Make headings stand out */
+  color: #281408; /* Soft orange */
+}
+
+p, li {
+  font-size: 1.4rem; /* Slightly smaller text for balance */
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #333; /* Dark text */
+}
+
+/* Add smooth transitions */
+a, h1, h2, p, li {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover, h1:hover, h2:hover, p:hover, li:hover {
+  color: #FF5700; /* Slightly darker orange for hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Header */
+.header {
+  background: #FF914D; /* Soft orange background */
+  color: #fff;
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header nav a {
+  color: #fff;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  color: #FFECD1; /* Light orange highlight */
+  text-decoration: underline;
+}
+
+/* About Section */
+.about {
+  background: #fff; /* White background */
+  border-top: 5px solid #FFECD1; /* Light orange border for separation */
+}
+
+.about p {
+  margin-top: 1rem;
+}
+
+/* Projects Section */
+.projects {
+  background: #FFECD1; /* Light orange background */
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects li {
+  margin: 1.5rem 0;
+  border-bottom: 2px solid #FF914D; /* Soft orange divider */
+  padding-bottom: 1rem;
+}
+
+/* Experience Section */
+.experience {
+  background: #fff; /* White background */
+}
+
+.experience ul {
+  list-style: square;
+  padding-left: 2rem;
+}
+
+.experience li {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  color: #FF914D; /* Soft orange for items */
+}
+
+/* Contact Section */
+.contact {
+  background: #FFECD1; /* Light orange background */
+  color: #FF914D; /* Soft orange text */
+}
+
+.contact a {
+  color: #FF5700; /* Darker orange for links */
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background: #FF914D; /* Soft orange background */
+  color: #fff; /* White text for contrast */
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 1rem;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.footer:hover {
+  background: #FF5700; /* Slightly darker orange for hover */
+  transition: background 0.3s ease;
+}
