@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-  font-family: 'Poppins', Arial, sans-serif; /* Modern font for elegance */
+  font-family: 'Poppins', Arial, sans-serif; 
   line-height: 1.8;
   margin: 0;
   padding: 0;
-  background-color: #fff; /* Pure white background */
-  color: #333; /* Dark text for readability */
+  background-color: #fff; 
+  color: #333; 
   overflow-x: hidden;
   min-width: 100vh;
 }
@@ -19,26 +19,26 @@ section {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0 2rem; /* Add padding for better spacing */
+  padding: 0 2rem; 
   box-sizing: border-box;
 }
 
 /* Typography */
 h1, h2 {
-  font-size: 3.5rem; /* Enlarged headings for a bold look */
+  font-size: 3.5rem; 
   margin-bottom: 1.5rem;
   text-align: center;
-  text-transform: uppercase; /* Make headings stand out */
-  color: #281408; /* Soft orange */
+  text-transform: uppercase; 
+  color: #281408; 
 }
 
 p, li {
-  font-size: 1.4rem; /* Slightly smaller text for balance */
+  font-size: 1.4rem; 
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  color: #333; /* Dark text */
+  color: #333; 
 }
 
 /* Add smooth transitions */
@@ -47,13 +47,13 @@ a, h1, h2, p, li {
 }
 
 a:hover, h1:hover, h2:hover, p:hover, li:hover {
-  color: #FF5700; /* Slightly darker orange for hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  color: #FF5700; 
+  transform: scale(1.05); 
 }
 
 /* Header */
 .header {
-  background: #FF914D; /* Soft orange background */
+  background: #FF914D; 
   color: #fff;
   padding: 1.5rem 0;
   position: sticky;
@@ -76,19 +76,157 @@ a:hover, h1:hover, h2:hover, p:hover, li:hover {
 }
 
 .header nav a:hover {
-  color: #FFECD1; /* Light orange highlight */
+  color: #FFECD1; 
   text-decoration: underline;
 }
 
 /* About Section */
 .about {
-  background: #fff; /* White background */
-  border-top: 5px solid #FFECD1; /* Light orange border for separation */
+  padding: 2rem; 
+  background: #fff;
+  text-align: center;
 }
 
-.about p {
-  margin-top: 1rem;
+.about h2 {
+  font-size: 3rem;
+  /* margin-bottom: 2rem;  */
+  color: #281408; 
 }
+
+.about-container {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 2rem; 
+  justify-content: center; 
+  align-items: stretch; 
+  width: 100%; 
+  margin: 0 auto; 
+  box-sizing: border-box;
+}
+
+.box {
+  background: #ffe8d6; 
+  padding: 2rem; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.box:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem; 
+  color: #281408; 
+  margin-top: 0;
+}
+
+.box p {
+  font-size: 1.2rem; 
+  line-height: 1.6; 
+  color: #333;
+}
+
+/* Language Proficiency */
+.language-proficiency .languages {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+    --progress-percentage: 0; /* Default value */
+}
+
+circle {
+  fill: none;
+  stroke-width: 10;
+}
+
+circle:nth-child(1) {
+  stroke: #f0f0f0; /* Background color */
+}
+
+circle:nth-child(2) {
+  stroke: #FF914D; /* Active progress color */
+  transition: stroke-dashoffset 1.5s ease-out;
+}
+
+
+@keyframes progress-animation {
+  from {
+    stroke-dashoffset: 283; /* Full circle */
+  }
+  to {
+    stroke-dashoffset: calc(283 - (283 * var(--progress-percentage) / 100));
+  }
+}
+
+.circle span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Programming Proficiency */
+.programming-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill {
+  text-align: left;
+  width: 100%;
+}
+
+.progress-bar {
+  background: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress {
+  height: 100%;
+  background: #FF914D;
+  animation: width-animation 1.5s ease-out;
+}
+
+@keyframes width-animation {
+  from {
+    width: 0;
+  }
+}
+
 
 /* Projects Section */
 .projects {
@@ -106,21 +244,65 @@ a:hover, h1:hover, h2:hover, p:hover, li:hover {
   padding-bottom: 1rem;
 }
 
-/* Experience Section */
-.experience {
-  background: #fff; /* White background */
+/*Certifications*/
+.achievement-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.experience ul {
-  list-style: square;
-  padding-left: 2rem;
+.block {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience li {
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  color: #FF914D; /* Soft orange for items */
+.block h3 {
+  font-size: 2rem;
+  color: #281408;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
+
+.card-container {
+  display: flex; /* Arrange cards horizontally */
+  gap: 1rem;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  justify-content: center;
+}
+
+.achievement-card {
+  background: #fdf7f0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 150px; /* Fixed width for consistent card size */
+  text-align: center;
+}
+
+.achievement-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card h4 {
+  font-size: 1.3rem;
+  color: #281408;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
 
 /* Contact Section */
 .contact {
@@ -141,12 +323,11 @@ a:hover, h1:hover, h2:hover, p:hover, li:hover {
 
 /* Footer */
 .footer {
-  background: #FF914D; /* Soft orange background */
-  color: #fff; /* White text for contrast */
+  background: #FF914D; 
+  color: #fff; 
   text-align: center;
   padding: 1.5rem;
   font-size: 1rem;
-
   position: fixed;
   bottom: 0;
   left: 0;
@@ -155,6 +336,6 @@ a:hover, h1:hover, h2:hover, p:hover, li:hover {
 }
 
 .footer:hover {
-  background: #FF5700; /* Slightly darker orange for hover */
+  background: #FF5700; 
   transition: background 0.3s ease;
 }
