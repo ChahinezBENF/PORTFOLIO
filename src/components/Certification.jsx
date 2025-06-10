@@ -2,15 +2,17 @@ import React from "react";
 
 const Certification = () => {
   const certifications = [
+    { name: "Google UX Design", issuer: "Google", date: "August 2025" },
     { name: "CompTIA A+", issuer: "CompTIA", date: "April 2025" },
-    { name: "Google UX Design", issuer: "Google", date: "May 2025" },
-    { name: "Bachelor’s in Computer Science", institution: "University of ABC", date: "June 2020" },
-    { name: "Bachelor’s in Computer Science", institution: "University of ABC", date: "June 2020" },
+    { name: "Modeling Software Systems: UML ", issuer: " Coursera", date: " February 2024" },
+    { name: "CMS Wordpress ", issuer: " Ibn Rochd ", date: " August 2022" },
   ];
 
   const degrees = [
-    { name: "Master’s in Information Systems", institution: "University of XYZ", date: "June 2023" },
-    { name: "Bachelor’s in Computer Science", institution: "University of ABC", date: "June 2020" },
+    { name: "Software Engineering", institution: "Per Scholas , USA", date: "May 2025" },
+    { name: "IT Engineering", institution: "Copper Union", date: "May 2024" },
+    { name: "Master’s in Information Systems", institution: "University of Mohamed Bougerra , Algeria", date: "October 2021" },
+    { name: "Bachelor’s in Computer Science", institution: "University of Algiers , Algeria", date: "June 2020" },
   ];
 
   return (
