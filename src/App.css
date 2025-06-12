@@ -257,7 +257,7 @@ circle:nth-child(2) {
 
 .block {
   flex: 1;
-  min-width: 3000px;
+  min-width: 780px;
   max-width: 400px;
   background: #fff;
   padding: 1rem;
