@@ -251,22 +251,23 @@ circle:nth-child(2) {
 .achievement-container {
   display: flex;
   gap: 2rem;
-  justify-content: space-between; /* Spread blocks with consistent spacing */
-  align-items: flex-start; /* Align items to the top */
-  flex-wrap: wrap; /* Allow blocks to wrap on smaller screens */
+  justify-content: center; /* Center content */
+  align-items: flex-start;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Allow horizontal scrolling if necessary */
 }
 
+
 .block {
-  flex: 1 1 auto; /* Allow blocks to grow and shrink as needed */
+  flex: 1;
   min-width: 780px;
-  max-width: 780px; /* Ensure consistent size */
+  max-width: 400px;
   background: #fff;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .block h3 {
   font-size: 2rem;
