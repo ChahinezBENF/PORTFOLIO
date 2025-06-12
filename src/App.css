@@ -257,13 +257,14 @@ circle:nth-child(2) {
 
 .block {
   flex: 1;
-  min-width: 780px; /* Ensure blocks take up enough space */
-  max-width: 400px; /* Limit the block size */
+  width: 780px; /* Set a fixed width */
   background: #fff;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto;
+  min-height: 400px; /* Ensure blocks don't collapse */
 }
 
 .block h3 {
