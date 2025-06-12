@@ -251,16 +251,13 @@ circle:nth-child(2) {
 .achievement-container {
   display: flex;
   gap: 2rem;
-  justify-content: center; /* Center content */
-  align-items: flex-start;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  overflow-x: auto; /* Allow horizontal scrolling if necessary */
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
 
 .block {
   flex: 1;
-  min-width: 780px;
+  min-width: 3000px;
   max-width: 400px;
   background: #fff;
   padding: 1rem;
