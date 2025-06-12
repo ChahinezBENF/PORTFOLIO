@@ -282,7 +282,7 @@ circle:nth-child(2) {
 
 .achievement-card {
   background: #fdf7f0;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -306,17 +306,12 @@ circle:nth-child(2) {
   color: #333;
 }
 
-@media (max-width: 768px) {
-  .achievement-container {
-    flex-direction: column; /* Stack the blocks vertically */
-    align-items: center; /* Center the blocks */
-  }
-
+@media (max-width: 1200px) {
   .block {
-    max-width: 90%; /* Take up most of the screen width */
+    min-width: 100%; /* Ensure blocks stack */
+    max-width: 90%; /* Provide some padding from the edges */
   }
 }
-
 
 /* Contact Section */
 .contact {
