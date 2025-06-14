@@ -1,6 +1,14 @@
 import React from "react";
+import { useEffect } from "react";
 
 const About = () => {
+    useEffect(() => {
+    const element = document.getElementById("about");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <section id="about" className="about">
       <h2>About Me</h2>
@@ -23,79 +31,79 @@ const About = () => {
         </div>
 
         {/* Language Proficiency */}
-<div className="box language-proficiency">
-  <h3>Language Proficiency</h3>
-  <hr />
-  <div className="languages">
-    {/* French */}
- <div className="circle">
-  <svg width="100" height="100">
-    <circle cx="50" cy="50" r="45" stroke="#f0f0f0" strokeWidth="10" fill="none" />
-    <circle
-      cx="50"
-      cy="50"
-      r="45"
-      stroke="#FF914D"
-      strokeWidth="10"
-      fill="none"
-      style={{
-        strokeDasharray: 283, // Full circle perimeter
-        strokeDashoffset: 283 - (283 * 90) / 100, // 90% proficiency
-        transition: "stroke-dashoffset 1.5s ease-out",
-      }}
-    />
-  </svg>
-  <span>
-    French
-    <br />
-    90%
-  </span>
-</div>
+        <div className="box language-proficiency">
+          <h3>Language Proficiency</h3>
+          <hr />
+          <div className="languages">
+            {/* French */}
+            <div className="circle">
+              <svg width="100" height="100">
+                <circle cx="50" cy="50" r="45" stroke="#f0f0f0" strokeWidth="10" fill="none" />
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  stroke="#FF914D"
+                  strokeWidth="10"
+                  fill="none"
+                  style={{
+                    strokeDasharray: 283, // Full circle perimeter
+                    strokeDashoffset: 283 - (283 * 90) / 100, // 90% proficiency
+                    transition: "stroke-dashoffset 1.5s ease-out",
+                  }}
+                />
+              </svg>
+              <span>
+                French
+                <br />
+                90%
+              </span>
+            </div>
 
-    {/* Arabic */}
-    <div className="circle">
-      <svg>
-        <circle cx="50" cy="50" r="45"></circle>
-        <circle
-          cx="50"
-          cy="50"
-          r="45"
-          style={{
-            strokeDasharray: "283",
-            strokeDashoffset: `${283 - (283 * 100) / 100}`, // 100% proficiency
-          }}
-        ></circle>
-      </svg>
-      <span>
-        Arabic
-        <br />
-        100%
-      </span>
-    </div>
-    {/* English */}
-    <div className="circle">
-      <svg>
-        <circle cx="50" cy="50" r="45"></circle>
-        <circle
-          cx="50"
-          cy="50"
-          r="45"
-          style={{
-            strokeDasharray: "283",
-            strokeDashoffset: `${283 - (283 * 80) / 100}`, // 80% proficiency
-          }}
-        ></circle>
-      </svg>
-      <span>
-        English
-        <br />
-        80%
-      </span>
-    </div>
-  </div>
-</div>
+            {/* Arabic */}
+            <div className="circle">
+              <svg>
+                <circle cx="50" cy="50" r="45"></circle>
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  style={{
+                    strokeDasharray: "283",
+                    strokeDashoffset: `${283 - (283 * 100) / 100}`, // 100% proficiency
+                  }}
+                ></circle>
+              </svg>
+              <span>
+                Arabic
+                <br />
+                100%
+              </span>
+            </div>
+            {/* English */}
+            <div className="circle">
+              <svg>
+                <circle cx="50" cy="50" r="45"></circle>
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  style={{
+                    strokeDasharray: "283",
+                    strokeDashoffset: `${283 - (283 * 80) / 100}`, // 80% proficiency
+                  }}
+                ></circle>
+              </svg>
+              <span>
+                English
+                <br />
+                80%
+              </span>
+            </div>
+          </div>
+        </div>
 
-       {/* Programming Language Proficiency */}
+        {/* Programming Language Proficiency */}
         <div className="box programming-skills">
           <h3>Programming Proficiency</h3>
           <hr />

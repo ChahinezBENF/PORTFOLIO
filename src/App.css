@@ -1,4 +1,8 @@
 /* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', Arial, sans-serif; 
   line-height: 1.8;
@@ -229,6 +233,19 @@ circle:nth-child(2) {
 
 
 /* Projects Section */
+.projects-scroll-container {
+  max-height: 400px;        /* fixed height for scrolling */
+  overflow-y: auto;         /* vertical scroll only */
+  overflow-x: hidden;       /* prevent horizontal scrollbar */
+  padding-right: 10px;      /* space for scrollbar */
+  margin-top: 1rem;
+}
+
+.projects-list{
+white-space: normal;
+}
+
+
 .projects {
   background: #FFECD1; /* Light orange background */
 }
