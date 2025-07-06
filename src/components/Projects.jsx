@@ -15,7 +15,7 @@ const projectsData = [
     {
     title: "Civil Inspection Report Builder",
     description: "A comprehensive digital tool designed to assist civil engineers, project managers, and field inspectors in documenting and managing inspection processes. It automates report generation, streamlines workflows, and ensures data accuracy while offering customization to cater to different types of civil projects, such as construction, infrastructure maintenance, and environmental assessments.",
-    url: "https://todolist-dcn5.onrender.com",
+    url: "https://report-builder-s83d.onrender.com/",
   },
 
 ];
